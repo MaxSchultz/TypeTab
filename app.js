@@ -76,7 +76,7 @@ jQuery(document).ready(function($) {
 	}
 	
 	function grabFonts(fontList) {
-		var base = "http://fonts.googleapis.com/css?family=",
+		var base = "https://fonts.googleapis.com/css?family=",
 			families = [],
 			url, tail
 		$.each(fontList, function(i,v){
