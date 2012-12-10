@@ -1,0 +1,42 @@
+body {
+    /*RAD CSS DOTTED BACKGROUND BY ALEPRIETO*/
+    padding: 1.25em 0.6875em;
+    background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    -webkit-background-size: 3px 3px;
+    -moz-background-size: 3px 3px;
+    background-size: 3px 3px;
+}
+#fonts {
+    display: none;
+    color: #444;
+    text-shadow: 0px 2px 2px #fff;
+}
+h1:focus { outline: none }
+h1 {
+    visibility: hidden;
+    font-size: 75px;
+    text-decoration: none;
+    margin: 0 0 0 35px;
+}
+
+h1:hover {
+
+}
+
+li {
+font-size: 30px;
+
+}
+li:hover {;
+}
+
+.wf-active h1 { visibility: visible }
+.wf-loading h1 { visibility: hidden }
+ul {
+    list-style-type: none;
+    visibility: hidden;
+}
+.wf-active ul { visibility: visible }
