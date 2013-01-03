@@ -52,6 +52,16 @@ jQuery(document).ready(function ($) {
                 'variants': variantsList
             })
             target.html(html)
+            
+            var base = "https://fonts.googleapis.com/css?family=",
+                families = [],
+                url, tail
+                $.each(fonts, function (i, v) {
+                    tail = v.family + ':' + v.variants.join(',')
+                    $('<link rel="stylesheet" href="' + base + tail + '" >').appendTo("head")
+                })
+
+
         }
 
         function templatify(html, data) {
@@ -75,14 +85,14 @@ jQuery(document).ready(function ($) {
             return (isItalic) ? style + 'font-style:italic;' : style
         }
 
-        function grabFonts(fontList) {
-            var base = "https://fonts.googleapis.com/css?family=",
-                families = [],
-                url, tail
-                $.each(fontList, function (i, v) {
-                    tail = v.family + ':' + v.variants.join(',')
-                    $('<link rel="stylesheet" href="' + base + tail + '" >').appendTo("head")
-                })
-        }
+        // function grabFonts(fontList) {
+        //     var base = "https://fonts.googleapis.com/css?family=",
+        //         families = [],
+        //         url, tail
+        //         $.each(fontList, function (i, v) {
+        //             tail = v.family + ':' + v.variants.join(',')
+        //             $('<link rel="stylesheet" href="' + base + tail + '" >').appendTo("head")
+        //         })
+        // }
 
 });
