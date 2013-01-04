@@ -1,3 +1,18 @@
+WebFontConfig = {
+  google: { families: [ 'Cantarell' ] },
+    active: function() {
+    $("#fonts").show("fast");
+  },
+};
+(function() {
+var wf = document.createElement('script');
+wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+wf.type = 'text/javascript';
+wf.async = 'true';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(wf, s);
+})();
+
 jQuery(document).ready(function ($) {
     var target = $("#fonts"),
         api = 'https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyAAy3g4GGcbdk1_WVTcdI76nzzygW8Hrp0',
@@ -11,7 +26,7 @@ jQuery(document).ready(function ($) {
                 })
                 // gFontList.sort(function() { return 0.5 - Math.random() });
                 renderFontList(gFontList)
-                grabFonts(gFontList)
+                // grabFonts(gFontList)
             } else {
                 onError()
             }
@@ -56,8 +71,8 @@ jQuery(document).ready(function ($) {
             var base = "https://fonts.googleapis.com/css?family=",
                 families = [],
                 url, tail
-                $.each(fonts, function (i, v) {
-                    tail = v.family + ':' + v.variants.join(',')
+                $.each(fonts[Math.floor(Math.random() * fonts.length)], function (i, v) {
+                    tail = val.family + ':' + v.variants
                     $('<link rel="stylesheet" href="' + base + tail + '" >').appendTo("head")
                 })
 
@@ -85,14 +100,6 @@ jQuery(document).ready(function ($) {
             return (isItalic) ? style + 'font-style:italic;' : style
         }
 
-        // function grabFonts(fontList) {
-        //     var base = "https://fonts.googleapis.com/css?family=",
-        //         families = [],
-        //         url, tail
-        //         $.each(fontList, function (i, v) {
-        //             tail = v.family + ':' + v.variants.join(',')
-        //             $('<link rel="stylesheet" href="' + base + tail + '" >').appendTo("head")
-        //         })
-        // }
+
 
 });

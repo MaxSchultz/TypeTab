@@ -16,7 +16,6 @@ body {
 }
 h1:focus { outline: none }
 h1 {
-    visibility: hidden;
     font-size: 75px;
     text-decoration: none;
     margin: 0 0 0 35px;
@@ -30,13 +29,7 @@ li {
 font-size: 30px;
 
 }
-li:hover {;
-}
 
-.wf-active h1 { visibility: visible }
-.wf-loading h1 { visibility: hidden }
 ul {
     list-style-type: none;
-    visibility: hidden;
 }
-.wf-active ul { visibility: visible }
