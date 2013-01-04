@@ -1,35 +1,28 @@
-body {
-    /*RAD CSS DOTTED BACKGROUND BY ALEPRIETO*/
-    padding: 1.25em 0.6875em;
-    background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-    background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-    background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-    background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-    -webkit-background-size: 3px 3px;
-    -moz-background-size: 3px 3px;
-    background-size: 3px 3px;
-}
-#fonts {
-    display: none;
-    color: #444;
-    text-shadow: 0px 2px 2px #fff;
-}
-h1:focus { outline: none }
-h1 {
-    font-size: 75px;
-    text-decoration: none;
-    margin: 0 0 0 35px;
-}
+body {  /*RAD CSS DOTTED BACKGROUND BY ALEPRIETO*/
+        padding: 1.25em 0.6875em;
+        background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+        background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+        background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+        background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+        -webkit-background-size: 3px 3px;
+        -moz-background-size: 3px 3px;
+        background-size: 3px 3px; }
 
-h1:hover {
 
-}
+h1 {  white-space: nowrap;
+      font-size: 15.0vw;
+      text-decoration: none;
+      margin: 0 0 0 35px;
+      -webkit-transition: color 100ms ease-in; }
+h1:hover {  color: #333 }
+h1:focus {  outline: none }
+li {  font-size: 30px;
+      font-size: 5.2vw;
+      outline: 0px solid transparent;
+      -webkit-transition: color 100ms ease-in; }
+li:hover {  color: #333 }
+ul {  list-style-type: none }
 
-li {
-font-size: 30px;
-
-}
-
-ul {
-    list-style-type: none;
-}
+#fonts {  display: none;
+          color: #777;
+          text-shadow: 0px 2px 2px #fff; }
