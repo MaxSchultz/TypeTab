@@ -13,11 +13,6 @@ var s = document.getElementsByTagName('script')[0];
 s.parentNode.insertBefore(wf, s);
 })();
 
-// INITIALIZE LETTERING.JS
-  $(document).ready(function() {
-    $("#fonts").lettering();
-  });
-
 jQuery(document).ready(function ($) {
     var target = $("#fonts"),
         api = 'https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyAAy3g4GGcbdk1_WVTcdI76nzzygW8Hrp0',
@@ -51,8 +46,8 @@ jQuery(document).ready(function ($) {
         //*/
         function renderFontList(fonts) {
             // var template = "<div class='font' style='font-family:%name%'><a href='%extlink%' target='_blank'>%name%</a><ul>%variants%</ul></div>",
-            var template = "<h1 class='editable' contenteditable='true' style='font-family:%name%'>New tab.</h1><ul>%variants%</ul>",
-                variantsTemplate = "<li class='editable' contenteditable='true' style='%style%; font-family:%name%;'>%name% %variant%</li>",
+            var template = "<div class='big' contenteditable='true' style='font-family:%name%'>New tab.</div><ul>%variants%</ul>",
+                variantsTemplate = "<li style='%style%; font-family:%name%;'><div contenteditable='true' class='small'>%name% %variant%</div></li>",
                 variantsList = "",
                 specimenUrlPrefix = "http://www.google.com/webfonts/specimen/",
                 html = "",
@@ -109,7 +104,7 @@ jQuery(document).ready(function ($) {
 
 
 // STOP USER FROM CREATING NEW LINE WHEN contenteditable
-$(document).on('keypress', '.editable', function(e){
+$(document).on('keypress', '.big, .small', function(e){
     return e.which != 13; 
 
 });  
