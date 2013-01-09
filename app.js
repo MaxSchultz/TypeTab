@@ -46,8 +46,8 @@ jQuery(document).ready(function ($) {
         //*/
         function renderFontList(fonts) {
             // var template = "<div class='font' style='font-family:%name%'><a href='%extlink%' target='_blank'>%name%</a><ul>%variants%</ul></div>",
-            var template = "<div class='big' contenteditable='true' style='font-family:%name%'>New tab.</div><ul>%variants%</ul>",
-                variantsTemplate = "<li style='%style%; font-family:%name%;'><div contenteditable='true' class='small'>%name% %variant%</div></li>",
+            var template = "<div class='big' contenteditable='true' style='font-family:%name%'><span>New tab.</span></div><ul>%variants%</ul>",
+                variantsTemplate = "<li style='%style%; font-family:%name%;'><div class='small'><span><a href='%extlink%' target='_blank'>%name% %variant%</a></span></div></li>",
                 variantsList = "",
                 specimenUrlPrefix = "http://www.google.com/webfonts/specimen/",
                 html = "",
@@ -58,6 +58,7 @@ jQuery(document).ready(function ($) {
                 variantsList += templatify(variantsTemplate, {
                     'name': val.family,
                     'variant': nicerVariant(vv),
+                    'extlink': specimenUrlPrefix + encodeURIComponent(val.family),
                     'style': variantStyle(vv)
                 })
             })
