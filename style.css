@@ -1,3 +1,4 @@
+
 body {
     padding: 2em;
     /*RAD CSS DOTTED BACKGROUND BY ALEPRIETO*/
@@ -8,6 +9,7 @@ body {
     -webkit-background-size: 3px 3px;
     color: #777;
     white-space: nowrap;
+    text-shadow: 0px 2px 2px #fff;
 }
 
 a { color: #777; }
@@ -30,11 +32,5 @@ a { color: #777; }
 .big:focus { outline: none }
 
 ul { list-style-type: none; margin-left: -2em;}
-#fonts {
-    text-shadow: 0px 2px 2px #fff;
-}
 
-
-  .wf-loading span { visibility: hidden; }
-  .wf-active span { 
-    visibility: visible; }
+#fonts {display: none;}

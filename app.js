@@ -1,18 +1,3 @@
-WebFontConfig = {
-  google: { families: [ 'Cantarell' ] },
-    active: function() {
-    $("#fonts").show("fast");
-  },
-};
-(function() {
-var wf = document.createElement('script');
-wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-wf.type = 'text/javascript';
-wf.async = 'true';
-var s = document.getElementsByTagName('script')[0];
-s.parentNode.insertBefore(wf, s);
-})();
-
 jQuery(document).ready(function ($) {
     var target = $("#fonts"),
         api = 'https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyAAy3g4GGcbdk1_WVTcdI76nzzygW8Hrp0',
@@ -103,6 +88,11 @@ jQuery(document).ready(function ($) {
 
 });
 
+
+$(window).load(function() {
+    $("#fonts").show("fast");
+
+});
 
 // STOP USER FROM CREATING NEW LINE WHEN contenteditable
 $(document).on('keypress', '.big, .small', function(e){
