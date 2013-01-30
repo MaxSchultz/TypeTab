@@ -30,7 +30,6 @@ jQuery(document).ready(function ($) {
         })
         //*/
         function renderFontList(fonts) {
-            // var template = "<div class='font' style='font-family:%name%'><a href='%extlink%' target='_blank'>%name%</a><ul>%variants%</ul></div>",
             var template = "<div class='big' contenteditable='true' style='font-family:%name%'><span>New tab.</span></div><ul>%variants%</ul>",
                 variantsTemplate = "<li style='%style%; font-family:%name%;'><div class='small'><span><a href='%extlink%' target='_blank'>%name% %variant%</a></span></div></li>",
                 variantsList = "",
