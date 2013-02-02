@@ -17,13 +17,14 @@ jQuery(document).ready(function ($) {
             }
         },
         onError = function () {
-            target.html("Error loading webfonts. :(")
+            $("#error").show("fast");
         }
         //*
         // this is where it's calling the URL from ^^^^^^
         $.ajax({
             url: api,
             type: "GET",
+            timeout: 800,
             dataType: "jsonp",
             success: onSuccess,
             error: onError

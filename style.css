@@ -30,4 +30,6 @@ a { color: #777; }
 
 ul { list-style-type: none; margin-left: -2em;}
 
-#fonts {display: none;}
+#fonts, #error {display: none;}
+
+#error {font-family: sans-serif;}
