@@ -4,9 +4,7 @@ body {
     /*RAD CSS DOTTED BACKGROUND BY ALEPRIETO*/
     background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
     background-size: 3px 3px;
-    color: #777;
-    white-space: nowrap;
-    text-shadow: 0px 2px 2px #fff;
+    
 }
 
 a { color: #777; }
@@ -14,7 +12,7 @@ a { color: #777; }
     display: inline-block;
     font-size: 14vw;
     line-height: 1.225em;
-    -webkit-transition: color 100ms ease-in;
+    /*-webkit-transition: color 100ms ease-in;*/
 }
 .small a {
     margin-top: 10px;
@@ -23,13 +21,59 @@ a { color: #777; }
     text-decoration: none;
     line-height: 1.125em;
     outline: 0px solid transparent;
-    -webkit-transition: color 100ms ease-in;
+/*    -webkit-transition: color 100ms ease-in;*/
 }
 .big:hover, .small a:hover { color: #333 }
 .big:focus { outline: none }
+
+#fonts {text-shadow: 0px 2px 2px #fff; white-space: nowrap; color: #777;}
 
 ul { list-style-type: none; margin-left: -2em;}
 
 #fonts, #error {display: none;}
 
 #error {font-family: sans-serif;}
+
+
+.info-btn {
+
+
+position: fixed;
+margin: 1em 1.5em;
+right: 0;
+bottom: 0;
+border: 1px solid red;
+
+
+
+}
+
+#info{
+padding: 4em 1em;
+text-shadow: 0px 2px 2px #000;
+
+}
+
+#pageslide {
+    /* These styles MUST be included. Do not change. */
+    display: none;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index: 999999;
+    
+    /* Specify the width of your pageslide here */
+    width: 260px;
+    padding: 0 20px;
+    
+    /* These styles are optional, and describe how the pageslide will look */
+    background-color: #333;
+    /*RAD CSS DOTTED BACKGROUND BY ALEPRIETO*/
+    background-image: -webkit-repeating-radial-gradient(center center, rgba(255,255,255,.2), rgba(255,255,255,.2) 1px, transparent 1px, transparent 100%);
+    background-size: 3px 3px;
+    color: #FFF;
+    -webkit-box-shadow: inset 0 0 5px 5px #222;
+    -moz-box-shadow: inset 0 0 5px 5px #222;
+    box-shadow: inset 0 0 5px 5px #222;
+}

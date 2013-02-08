@@ -3,14 +3,21 @@
 <head>
 <meta name="google" value="notranslate" />
 <link rel="stylesheet" href="style.css">
-<script src="jquery.min.js"></script>
-<script src="app.js"></script>
+
+
 
 
 <title>New Tab</title>
 </head>
 <div id="fonts">
 </div>
+<a class="info-btn" href="#info">?</a>
+
+
+
+
+
+
 <div id="error">
 <div class="big">
 	New tab.
@@ -19,5 +26,22 @@
 	<a>Sans-serif</a>
 </div>
 </div>
+
+
+    <script src="jquery.min.js"></script>
+<script src="jquery.pageslide.min.js"></script>
+<script src="app.js"></script>
+<script type="text/javascript">
+    $('a').pageslide({ direction: "left", modal: true });
+</script>
+
+
+ <div id="info" style="display: none;">
+            <a href="https://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+            <h2>TypeTab</h2>
+            <p>This extension grabs a random font family from the Google WebFont API.</p>
+            <p><a href="javascript:$.pageslide.close()">Close</a></p>
+            <a class="info-btn" href="javascript:$.pageslide.close()">Close</a>
+        </div>
 
 </html>
