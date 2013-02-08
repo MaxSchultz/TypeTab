@@ -99,3 +99,10 @@ $(document).on('keypress', '.big, .small', function(e){
     return e.which != 13; 
 
 });  
+
+jQuery(document).ready(function ($) {
+ $('.info-btn').pageslide({ direction: "left" });
+ $('.info-btn-close').click(function(){
+  $.pageslide.close();
+});
+});
