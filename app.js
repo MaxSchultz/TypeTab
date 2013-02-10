@@ -102,7 +102,7 @@ $(document).on('keypress', '.big, .small', function(e){
 
 jQuery(document).ready(function ($) {
  $('.info-btn').pageslide({ direction: "left" });
- $('.info-btn-close').click(function(){
+ $('#info-close').click(function(){
   $.pageslide.close();
 });
 });
