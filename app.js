@@ -9,9 +9,7 @@ jQuery(document).ready(function ($) {
                         gFontList.push(value);
                     }
                 })
-                // gFontList.sort(function() { return 0.5 - Math.random() });
                 renderFontList(gFontList)
-                // grabFonts(gFontList)
             } else {
                 onError()
             }

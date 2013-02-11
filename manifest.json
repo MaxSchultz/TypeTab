@@ -6,5 +6,8 @@
 	"content_security_policy": "script-src 'self' https://*.googleapis.com; object-src 'self'",
 	"chrome_url_overrides": {
 		"newtab": "newtab.html"
-	}
+	},
+	"background": {
+    "scripts": ["app.js"]
+  }
 }
