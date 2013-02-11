@@ -32,7 +32,11 @@ a { color: #777; }
 .big:hover, .small a:hover { color: #333 }
 .big:focus { outline: none }
 
-#fonts {text-shadow: 0px 2px 2px #fff; white-space: nowrap; color: #777;}
+#fonts {
+
+    text-shadow: 0px 2px 2px #fff; 
+    white-space: nowrap; 
+    color: #777;}
 
 ul { list-style-type: none; margin-left: -2em;}
 
@@ -41,7 +45,7 @@ ul { list-style-type: none; margin-left: -2em;}
 #error {font-family: sans-serif;}
 
 
-.info-btn, .info-btn-close {
+.info-btn {
 position: fixed;
 margin: 1em 1.5em;
 right: 0;
@@ -57,19 +61,31 @@ bottom: 0;
     width:25px;
     height:25px;
     border-radius:50px;
+    border: 1px solid #999;
     font-size:14px;
     color: #fff;
-    margin: 8px;
+    margin: 12px 15px;
     line-height:25px;
     text-align:center;
-    background:#555;
+    background:#666;
     text-decoration: none;
     font-weight: bold;
     text-shadow: none;
+    font-style: italic;
+    -webkit-transition: background-color 100ms linear, color 400ms linear;
 
 }
 
+.info-btn:hover {
+    background-color: #FFF;
+    color: #666;
 
+
+}
+
+#info-close {
+font-style: normal;
+}
 
 
 #info{

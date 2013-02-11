@@ -90,12 +90,12 @@ jQuery(document).ready(function ($) {
 
 
 $(window).load(function() {
-    $("#fonts").show("fast");
+    $("#fonts").show();
 
 });
 
 // STOP USER FROM CREATING NEW LINE WHEN contenteditable
-$(document).on('keypress', '.big, .small', function(e){
+$(document).on('keypress', '.big', function(e){
     return e.which != 13; 
 
 });  
