@@ -8,6 +8,6 @@
 		"newtab": "newtab.html"
 	},
 	"background": {
-    "scripts": ["app.js"]
+    "page": "background.html"
   }
 }
