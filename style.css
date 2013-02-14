@@ -1,4 +1,4 @@
-html { -webkit-font-smoothing: antialiased }
+html { -webkit-font-smoothing: antialiased; }
 body {
     padding: 2em;
     /*RAD CSS DOTTED BACKGROUND BY ALEPRIETO*/
@@ -6,6 +6,8 @@ body {
     background-size: 3px 3px;
 }
 a { color: #777 }
+
+h2 {margin-top: 1.4em; margin-bottom: 0.3em;}
 .big {
     display: inline-block;
     font-size: 14vw;
@@ -45,10 +47,10 @@ ul {
     width: 25px;
     height: 25px;
     border-radius: 50px;
-    border: 1px solid #999;
+    border: 1px solid #666;
     font-size: 14px;
     color: #fff;
-    margin: 12px 15px;
+    margin: 12px 12px;
     line-height: 25px;
     text-align: center;
     background: #666;
@@ -61,13 +63,17 @@ ul {
 .info-btn:hover {
     background-color: #FFF;
     color: #666;
+    border: 1px solid #999;
 }
 #info-close { font-style: normal; }
 
+a#info-close:hover {color: #666;}
+
 #info {
-    padding: 4em 1em;
-    /*text-shadow: 0px 2px 2px #222;*/
-    font-family: sans-serif;
+    padding: 5em 1.4em 1em 1.4em;
+    text-shadow: 0px 1px 2px #000;
+    font-family: Arial, sans-serif;
+    font-size: 0.96em;
 
 }
 
@@ -75,15 +81,33 @@ ul {
 
 text-decoration: none;
 font-weight: bold;
+color:  #fff;
+
+}
+
+#info a:hover {
+
+text-decoration: none;
+font-weight: bold;
+color:  #68e076;
+
+}
+
+#info h1,h2 {
+
+font-family: Arial, sans-serif;
 
 }
 
 
 #info ul li {
 
-list-style-type: circle;
+margin-bottom: 1em;
 
 }
+
+ul.hints {list-style-type: circle; margin-top: 0;}
+
 
 #pageslide {
     /* These styles MUST be included. Do not change. */
@@ -95,14 +119,12 @@ list-style-type: circle;
     height: 100%;
     z-index: 999999;
     /* Specify the width of your pageslide here */
-    width: 310px;
+    width: 330px;
     /* These styles are optional, and describe how the pageslide will look */
     background-color: #333;
     /*RAD CSS DOTTED BACKGROUND BY ALEPRIETO*/
     background-image: -webkit-repeating-radial-gradient(center center, rgba(255,255,255,.2), rgba(255,255,255,.2) 1px, transparent 1px, transparent 100%);
     background-size: 3px 3px;
     color: #FFF;
-    -webkit-box-shadow: inset 0 0 5px 5px #222;
-    -moz-box-shadow: inset 0 0 5px 5px #222;
-    box-shadow: inset 0 0 5px 5px #222;
+    -webkit-box-shadow: inset 6px 0 12px 3px #222;
 }

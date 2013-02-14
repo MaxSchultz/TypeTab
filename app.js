@@ -1,4 +1,4 @@
-jQuery(document).ready(function ($) {
+$(document).ready(function() {
     var target = $("#fonts"),
         api = 'https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyAAy3g4GGcbdk1_WVTcdI76nzzygW8Hrp0',
         gFontList = [],
@@ -10,15 +10,15 @@ jQuery(document).ready(function ($) {
                     }
                 })
                 renderFontList(gFontList)
+                $("#fonts").show();
             } else {
                 onError()
             }
         },
         onError = function () {
-            $("#error").show("fast");
+            $("#error").show();
         }
         //*
-        // this is where it's calling the URL from ^^^^^^
         $.ajax({
             url: api,
             type: "GET",
@@ -84,16 +84,12 @@ jQuery(document).ready(function ($) {
             return (isItalic) ? style + 'font-style:italic;' : style
         }
 
-});
 
-
-$(window).load(function() {
-    $("#fonts").show();
 
 });
 
 // STOP USER FROM CREATING NEW LINE WHEN contenteditable
-$(document).on('keypress', '.big', function(e){
+$("body").on('keypress', '.big', function(e){
     return e.which != 13; 
 
 });  
