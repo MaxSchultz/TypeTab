@@ -94,7 +94,8 @@ $("body").on('keypress', '.big', function(e){
 
 });  
 
-jQuery(document).ready(function ($) {
+//INFO MENU
+$(document).ready(function ($) {
  $('.info-btn').pageslide({ direction: "left" });
  $('#info-close').click(function(){
   $.pageslide.close();

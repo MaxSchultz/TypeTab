@@ -1,130 +1,152 @@
-html { -webkit-font-smoothing: antialiased; }
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
 body {
-    padding: 2em;
+  padding: 2em;
     /*RAD CSS DOTTED BACKGROUND BY ALEPRIETO*/
-    background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-    background-size: 3px 3px;
+  background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  background-size: 3px 3px;
+  color: #777;
 }
-a { color: #777 }
 
-h2 {margin-top: 1.4em; margin-bottom: 0.3em;}
-.big {
-    display: inline-block;
-    font-size: 14vw;
-    line-height: 1.225em;
+a {
+  color: #777;
 }
-.small a {
-    margin-top: 10px;
-    display: inline-block;
-    font-size: 6vw;
-    text-decoration: none;
-    line-height: 1.125em;
-    outline: 0px solid transparent;
+
+h2 {
+  margin-top: 1.4em;
+  margin-bottom: 0.3em;
 }
-.big:hover,
-.small a:hover { color: #333 }
-.big:focus { outline: none }
-#fonts {
-    text-shadow: 0px 2px 2px #fff;
-    white-space: nowrap;
-    color: #777;
-}
+
 ul {
-    list-style-type: none;
-    margin-left: -2em;
+  list-style-type: none;
+  margin-left: -2em;
 }
-#fonts,
-#error { display: none }
-#error { font-family: sans-serif }
-.info-btn {
-    position: fixed;
-    margin: 1em 1.5em;
-    right: 0;
-    bottom: 0;
-}
-.info-btn {
-    display: block;
-    width: 25px;
-    height: 25px;
-    border-radius: 50px;
-    border: 1px solid #666;
-    font-size: 14px;
-    color: #fff;
-    margin: 12px 12px;
-    line-height: 25px;
-    text-align: center;
-    background: #666;
-    text-decoration: none;
-    font-weight: bold;
-    text-shadow: none;
-    font-style: italic;
-    -webkit-transition: background-color 100ms linear, color 400ms linear;
-}
-.info-btn:hover {
-    background-color: #FFF;
-    color: #666;
-    border: 1px solid #999;
-}
-#info-close { font-style: normal; }
 
-a#info-close:hover {color: #666;}
+#fonts {
+  text-shadow: 0px 2px 2px #fff;
+  white-space: nowrap;
+}
+
+
+
+#fonts,#error {
+  display: none;
+}
+
+#error {
+  font-family: sans-serif;
+  color:;
+}
+
+.big {
+  display: inline-block;
+  font-size: 14vw;
+  line-height: 1.225em;
+}
+
+.big:focus {
+  outline: none;
+}
+
+.small {
+  margin-top: 10px;
+  display: block;
+  font-size: 6vw;
+  line-height: 1.125em;
+  outline: 0px solid transparent;
+}
+
+.small a {
+  text-decoration: none;
+}
+
+.big:hover,.small a:hover {
+  color: #333;
+}
+
+.info-btn {
+  display: block;
+  position: fixed;
+  margin: 1em 1.5em;
+  right: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  border: 1px solid #666;
+  font-size: 14px;
+  color: #fff;
+  line-height: 25px;
+  text-align: center;
+  background: #666;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: none;
+  font-style: italic;
+  -webkit-transition: background-color 100ms linear, color 400ms linear;
+}
+
+.info-btn:hover {
+  background-color: #FFF;
+  color: #666;
+  border: 1px solid #999;
+}
+
+#info-close {
+  font-style: normal;
+}
+
+a#info-close:hover {
+  color: #666;
+}
 
 #info {
-    padding: 4em 1.4em 1em 1.4em;
-    text-shadow: 0px 1px 2px #000;
-    font-family: Arial, sans-serif;
-    font-size: 0.96em;
-
+  padding: 4em 1.4em 1em 1.4em;
+  text-shadow: 0px 1px 2px #000;
+  font-family: Arial, sans-serif;
+  font-size: 0.96em;
 }
 
 #info a {
-
-text-decoration: none;
-font-weight: bold;
-color:  #fff;
-
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
 }
 
 #info a:hover {
-
-text-decoration: none;
-font-weight: bold;
-color:  #68e076;
-
+  text-decoration: none;
+  font-weight: bold;
+  color: #68e076;
 }
 
 #info h1,h2 {
-
-font-family: Arial, sans-serif;
-
+  font-family: Arial, sans-serif;
 }
-
 
 #info ul li {
-
-margin-bottom: 1em;
-
+  margin-bottom: 1em;
 }
 
-ul.hints {list-style-type: circle; margin-top: 0;}
-
+ul.hints {
+  list-style-type: circle;
+  margin-top: 0;
+}
 
 #pageslide {
-    /* These styles MUST be included. Do not change. */
-    display: none;
-    overflow: auto;
-    position: absolute;
-    position: fixed;
-    top: 0;
-    height: 100%;
-    z-index: 999999;
-    /* Specify the width of your pageslide here */
-    width: 330px;
-    /* These styles are optional, and describe how the pageslide will look */
-    background-color: #333;
+  display: none;
+  overflow: auto;
+  position: absolute;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  z-index: 999999;
+  width: 330px;
+  background-color: #333;
     /*RAD CSS DOTTED BACKGROUND BY ALEPRIETO*/
-    background-image: -webkit-repeating-radial-gradient(center center, rgba(255,255,255,.2), rgba(255,255,255,.2) 1px, transparent 1px, transparent 100%);
-    background-size: 3px 3px;
-    color: #FFF;
-    -webkit-box-shadow: inset 6px 0 12px 3px #222;
+  background-image: -webkit-repeating-radial-gradient(center center, rgba(255,255,255,.2), rgba(255,255,255,.2) 1px, transparent 1px, transparent 100%);
+  background-size: 3px 3px;
+  color: #FFF;
+  -webkit-box-shadow: inset 6px 0 12px 3px #222;
 }
