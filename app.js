@@ -22,7 +22,7 @@ $(document).ready(function() {
         $.ajax({
             url: api,
             type: "GET",
-            timeout: 800,
+            timeout: 1500,
             dataType: "jsonp",
             success: onSuccess,
             error: onError
