@@ -1,0 +1,183 @@
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+
+  color: #666;
+  font-family: Arial, sans-serif;
+
+}
+
+
+a {
+  color: #777;
+}
+
+ul {
+  list-style-type: circle;
+
+}
+
+
+
+
+
+
+h1 {
+  display: inline-block;
+  font-size: 2em;
+  line-height: 0;
+}
+
+h2 {margin: 0em;}
+
+td {
+
+  vertical-align: top;
+}
+
+
+
+.container {
+  margin-top: 0;
+  text-align: center;
+}
+ 
+.container:before {
+  content: '';
+  display: inline-block;
+  height: 100%; 
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+    
+ }
+ 
+.box {
+  display: inline-block;
+  vertical-align: middle;
+  width: 575px;
+  text-align: left;
+  margin-bottom: 5.5em;
+
+
+ }
+
+
+
+.box h2 {font-weight: bold;}
+.box a {text-decoration: none; font-weight: bold;}
+.box a:hover {text-decoration: underline;}
+.box p {line-height: 1.3em; font-size: 1em; }
+
+
+.titling {
+margin: 2em 0em 0.8em 0em ;
+
+} 
+
+ .titling h1 {
+font-family: 'Caudex', sans-serif;
+font-size: 4em;
+
+margin-left: -0.2em;
+color: #555;
+font-weight: 600;
+
+ }
+
+ h1 .char2 {
+vertical-align: top;
+margin-left: -0.096em;
+}
+
+h1 .char6 {
+vertical-align: top;
+margin-left: -0.072em;
+}
+
+.single-col {
+  padding: 0em 0em 0em 1.5em;
+}
+
+.single-col p{
+  margin-top: 0.3em;
+}
+
+a.get-it {
+
+float: right;
+font-size: 15px;
+padding: 1.4em;
+font-family: Arial, sans-serif;
+margin-top: 0.8em;
+border-radius: 4px;
+background-color: #666;
+color: #fff;
+text-shadow: 0px 1px 2px #222;
+border: 1px solid #444;
+background-image: url('chrome_bag.png');
+background-position: 17em;
+background-repeat: no-repeat;
+padding-right: 4em;
+text-decoration: none;
+box-shadow: 0px 2px 1px #222;
+ }
+
+a:hover.get-it {
+text-decoration: none;
+background-color: #888;
+ }
+
+
+a.git-it {
+
+float: right;
+font-size: 15px;
+padding: 1.4em;
+font-family: Arial, sans-serif;
+margin-top: 2.2em;
+border-radius: 4px;
+background-color: #999;
+color: #fff;
+text-shadow: 0px 1px 2px #222;
+border: 1px solid #666;
+background-image: url('octocat.png');
+background-position: 13.2em;
+background-repeat: no-repeat;
+padding-right: 4em;
+text-decoration: none;
+box-shadow: 0px 2px 1px #777;
+ }
+
+a:hover.git-it {
+text-decoration: none;
+background-color: #888;
+ }
+
+
+
+
+hr.carved {
+  clear: both; 
+  float: none; 
+  width: 100%; 
+  height: 2px;
+  margin: 2em 0;
+  border: none; 
+  background: #ddd;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(0.5, rgb(221,221,221)),
+      color-stop(0.5, rgb(255,255,255))
+  );
+  background-image: -moz-linear-gradient(
+      center top,
+      rgb(221,221,221) 50%,
+      rgb(255,255,255) 50%
+  );
+}
+
+
